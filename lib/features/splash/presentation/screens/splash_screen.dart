@@ -27,11 +27,11 @@ class SplashScreen extends HookConsumerWidget {
       return null;
     }, const <Object?>[]);
 
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Semantics(
           label: 'TechMarket, chargement de l\'application',
-          child: Column(
+          child: const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Icon(Icons.storefront_rounded, color: AppColors.cyanAccent, size: 56),
