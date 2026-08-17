@@ -1,0 +1,31 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+*.iml
+
+# Generated localizations
+lib/core/l10n/generated/
+
+# Native platform folders (recreated in CI via `flutter create --platforms=android .`)
+android/
+ios/
+macos/
+linux/
+windows/
+web/
+
+# IDE
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Misc
+*.log
+.DS_Store
