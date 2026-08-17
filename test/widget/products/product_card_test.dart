@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/features/products/domain/entities/product_entity.dart';
-import 'package:techmarket/features/products/presentation/widgets/product_card.dart';
+import 'package:techmarket_pro1/features/products/domain/entities/product_entity.dart';
+import 'package:techmarket_pro1/features/products/presentation/widgets/product_card.dart';
 
 void main() {
   const ProductEntity product = ProductEntity(

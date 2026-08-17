@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/core/widgets/error_view.dart';
+import 'package:techmarket_pro1/core/widgets/error_view.dart';
 
 void main() {
   testWidgets('ErrorView displays the message text', (WidgetTester tester) async {

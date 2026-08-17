@@ -1,6 +1,6 @@
 # TechMarket
 
-![CI/CD](https://github.com/azizcheickshazili-rgb/techmarket/actions/workflows/ci.yml/badge.svg)
+![CI/CD](https://github.com/azizcheickshazili-rgb/techmarket_pro1/actions/workflows/ci.yml/badge.svg)
 ![Flutter](https://img.shields.io/badge/Flutter-3.24-02569B?logo=flutter&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-35E0DC)
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/features/auth/presentation/screens/login_screen.dart';
+import 'package:techmarket_pro1/features/auth/presentation/screens/login_screen.dart';
 
 import '../test_harness.dart';
 

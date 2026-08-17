@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/core/widgets/loading_indicator.dart';
+import 'package:techmarket_pro1/core/widgets/loading_indicator.dart';
 
 void main() {
   testWidgets('LoadingIndicator shows a CircularProgressIndicator',

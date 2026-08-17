@@ -1,12 +1,12 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:techmarket/core/storage/secure_storage_service.dart';
-import 'package:techmarket/core/utils/result.dart';
-import 'package:techmarket/features/auth/data/datasources/auth_remote_datasource.dart';
-import 'package:techmarket/features/auth/data/models/user_model.dart';
-import 'package:techmarket/features/auth/data/repositories/auth_repository_impl.dart';
-import 'package:techmarket/features/auth/domain/entities/user_entity.dart';
+import 'package:techmarket_pro1/core/storage/secure_storage_service.dart';
+import 'package:techmarket_pro1/core/utils/result.dart';
+import 'package:techmarket_pro1/features/auth/data/datasources/auth_remote_datasource.dart';
+import 'package:techmarket_pro1/features/auth/data/models/user_model.dart';
+import 'package:techmarket_pro1/features/auth/data/repositories/auth_repository_impl.dart';
+import 'package:techmarket_pro1/features/auth/domain/entities/user_entity.dart';
 
 class _MockAuthRemoteDataSource extends Mock implements AuthRemoteDataSource {}
 

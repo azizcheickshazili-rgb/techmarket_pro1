@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:techmarket/features/favorites/data/datasources/favorites_local_datasource.dart';
-import 'package:techmarket/features/favorites/data/repositories/favorites_repository_impl.dart';
+import 'package:techmarket_pro1/features/favorites/data/datasources/favorites_local_datasource.dart';
+import 'package:techmarket_pro1/features/favorites/data/repositories/favorites_repository_impl.dart';
 
 class _MockFavoritesLocalDataSource extends Mock implements FavoritesLocalDataSource {}
 

@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:techmarket/core/utils/result.dart';
-import 'package:techmarket/features/products/domain/entities/product_entity.dart';
-import 'package:techmarket/features/products/domain/repositories/products_repository.dart';
-import 'package:techmarket/features/products/domain/usecases/search_products_usecase.dart';
+import 'package:techmarket_pro1/core/utils/result.dart';
+import 'package:techmarket_pro1/features/products/domain/entities/product_entity.dart';
+import 'package:techmarket_pro1/features/products/domain/repositories/products_repository.dart';
+import 'package:techmarket_pro1/features/products/domain/usecases/search_products_usecase.dart';
 
 class _MockProductsRepository extends Mock implements ProductsRepository {}
 

@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:techmarket/app.dart';
-import 'package:techmarket/core/providers/core_providers.dart';
+import 'package:techmarket_pro1/app.dart';
+import 'package:techmarket_pro1/core/providers/core_providers.dart';
 
 /// End-to-end smoke test: boots the real app (against the live DummyJSON
 /// API) and walks through splash -> login -> product list -> product

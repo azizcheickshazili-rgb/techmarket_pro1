@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/features/auth/data/models/user_model.dart';
+import 'package:techmarket_pro1/features/auth/data/models/user_model.dart';
 
 void main() {
   group('UserModel.fromJson', () {

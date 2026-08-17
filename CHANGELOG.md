@@ -53,6 +53,6 @@ projet suit le [Semantic Versioning](https://semver.org/lang/fr/).
 - Premier appel à l'API DummyJSON (`GET /products`) sans état applicatif.
 - Mise en place du dépôt Git et du workflow Termux (clé PAT, `safe.directory`).
 
-[1.0.0]: https://github.com/azizcheickshazili-rgb/techmarket/releases/tag/v1.0.0
-[0.2.0]: https://github.com/azizcheickshazili-rgb/techmarket/releases/tag/v0.2.0
-[0.1.0]: https://github.com/azizcheickshazili-rgb/techmarket/releases/tag/v0.1.0
+[1.0.0]: https://github.com/azizcheickshazili-rgb/techmarket_pro1/releases/tag/v1.0.0
+[0.2.0]: https://github.com/azizcheickshazili-rgb/techmarket_pro1/releases/tag/v0.2.0
+[0.1.0]: https://github.com/azizcheickshazili-rgb/techmarket_pro1/releases/tag/v0.1.0

@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/features/favorites/presentation/providers/favorites_provider.dart';
-import 'package:techmarket/features/favorites/presentation/screens/favorites_screen.dart';
+import 'package:techmarket_pro1/features/favorites/presentation/providers/favorites_provider.dart';
+import 'package:techmarket_pro1/features/favorites/presentation/screens/favorites_screen.dart';
 
 import '../test_harness.dart';
 

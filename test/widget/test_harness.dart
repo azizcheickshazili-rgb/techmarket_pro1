@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/core/l10n/generated/app_localizations.dart';
+import 'package:techmarket_pro1/core/l10n/generated/app_localizations.dart';
 
 /// Shared harness so every widget test wires localization and Riverpod
 /// the same way instead of duplicating boilerplate per test file.

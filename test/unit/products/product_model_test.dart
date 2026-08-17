@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:techmarket/features/products/data/models/product_model.dart';
+import 'package:techmarket_pro1/features/products/data/models/product_model.dart';
 
 void main() {
   group('ProductModel.fromJson', () {

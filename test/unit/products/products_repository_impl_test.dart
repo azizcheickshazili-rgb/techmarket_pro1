@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:techmarket/core/utils/result.dart';
-import 'package:techmarket/features/products/data/datasources/products_remote_datasource.dart';
-import 'package:techmarket/features/products/data/models/product_model.dart';
-import 'package:techmarket/features/products/data/repositories/products_repository_impl.dart';
-import 'package:techmarket/features/products/domain/entities/product_entity.dart';
+import 'package:techmarket_pro1/core/utils/result.dart';
+import 'package:techmarket_pro1/features/products/data/datasources/products_remote_datasource.dart';
+import 'package:techmarket_pro1/features/products/data/models/product_model.dart';
+import 'package:techmarket_pro1/features/products/data/repositories/products_repository_impl.dart';
+import 'package:techmarket_pro1/features/products/domain/entities/product_entity.dart';
 
 class _MockProductsRemoteDataSource extends Mock implements ProductsRemoteDataSource {}
 

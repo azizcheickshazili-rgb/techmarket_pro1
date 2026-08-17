@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:techmarket/core/utils/result.dart';
-import 'package:techmarket/features/auth/domain/entities/user_entity.dart';
-import 'package:techmarket/features/auth/domain/repositories/auth_repository.dart';
-import 'package:techmarket/features/auth/domain/usecases/login_usecase.dart';
+import 'package:techmarket_pro1/core/utils/result.dart';
+import 'package:techmarket_pro1/features/auth/domain/entities/user_entity.dart';
+import 'package:techmarket_pro1/features/auth/domain/repositories/auth_repository.dart';
+import 'package:techmarket_pro1/features/auth/domain/usecases/login_usecase.dart';
 
 class _MockAuthRepository extends Mock implements AuthRepository {}
 

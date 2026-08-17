@@ -1,4 +1,4 @@
-name: techmarket
+name: techmarket_pro1
 description: "TechMarket — application e-commerce Flutter production-ready, connectée à DummyJSON, avec authentification JWT, Clean Architecture et couverture de tests complète."
 publish_to: 'none'
 version: 1.0.0+1
