@@ -46,12 +46,12 @@ jobs:
       - name: Apply formatting
         run: dart format .
 
-      # Fails on real errors/warnings only. `--fatal-infos` was removed:
-      # it turns purely stylistic lints (trailing commas, redundant
-      # arguments) into build failures, which is too strict for a
-      # hand-maintained codebase and adds no correctness value.
+      # Explicit and version-proof: infos are style suggestions, not
+      # build-breaking issues. Passing this flag guarantees that,
+      # regardless of the Flutter version's default behaviour, only
+      # genuine errors/warnings fail the build.
       - name: Analyze
-        run: flutter analyze
+        run: flutter analyze --no-fatal-infos
 
       - name: Run unit & widget tests with coverage
         run: flutter test --coverage

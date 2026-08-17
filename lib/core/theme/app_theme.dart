@@ -22,7 +22,7 @@ abstract final class AppTheme {
   static const String _fontFamily = 'SpaceGrotesk';
 
   static ThemeData get dark {
-    final ColorScheme scheme = const ColorScheme.dark(
+    const ColorScheme scheme = ColorScheme.dark(
       primary: AppColors.cyanAccent,
       onPrimary: Color(0xFF01221F),
       secondary: AppColors.cyanAccentMuted,
