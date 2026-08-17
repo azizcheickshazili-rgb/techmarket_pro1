@@ -80,7 +80,7 @@ abstract final class AppTheme {
           fontWeight: FontWeight.w600,
         ),
       ),
-      cardTheme: CardThemeData(
+      cardTheme: CardTheme(
         color: AppColors.navySurface,
         elevation: 0,
         shape: RoundedRectangleBorder(

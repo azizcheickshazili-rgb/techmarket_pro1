@@ -137,9 +137,6 @@ final FutureProviderFamily<ProductEntity, int> productDetailProvider =
   );
 });
 
-final StateProvider<String> productsSearchQueryProvider =
-    StateProvider<String>((Ref ref) => '');
-
 final FutureProviderFamily<List<ProductEntity>, String> productsSearchProvider =
     FutureProvider.family<List<ProductEntity>, String>((Ref ref, String query) async {
   final Result<List<ProductEntity>> result =
