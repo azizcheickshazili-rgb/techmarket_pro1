@@ -45,7 +45,7 @@ void main() {
       )),
     );
 
-    await tester.tap(find.byType(InkWell));
+    await tester.tap(find.byKey(const Key('product_card_tap_area')));
     expect(tapped, isTrue);
   });
 

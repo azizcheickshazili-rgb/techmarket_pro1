@@ -30,6 +30,7 @@ class ProductCard extends StatelessWidget {
       child: Card(
         clipBehavior: Clip.antiAlias,
         child: InkWell(
+          key: const Key('product_card_tap_area'),
           onTap: onTap,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

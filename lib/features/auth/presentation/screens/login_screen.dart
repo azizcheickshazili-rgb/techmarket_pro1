@@ -62,7 +62,7 @@ class LoginScreen extends HookConsumerWidget {
                       decoration: InputDecoration(labelText: l10n.usernameLabel),
                       validator: (String? value) =>
                           (value == null || value.trim().isEmpty)
-                              ? l10n.usernameLabel
+                              ? 'Ce champ est requis.'
                               : null,
                     ),
                   ),
@@ -99,7 +99,7 @@ class LoginScreen extends HookConsumerWidget {
                           ),
                           validator: (String? value) =>
                               (value == null || value.isEmpty)
-                                  ? l10n.passwordLabel
+                                  ? 'Ce champ est requis.'
                                   : null,
                         ),
                       );

@@ -21,7 +21,7 @@ void main() {
     await tester.tap(find.byKey(const Key('login_submit_button')));
     await tester.pump();
 
-    expect(find.text('Nom d\'utilisateur'), findsOneWidget);
+    expect(find.text('Ce champ est requis.'), findsNWidgets(2));
   });
 
   testWidgets('LoginScreen toggles password visibility icon on tap',
