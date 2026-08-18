@@ -49,9 +49,11 @@ void main() {
       ),
     );
     await tester.pump();
-    // Allow the splash screen's redirect (splash -> login) to settle
-    // without depending on exact timing.
-    await tester.pump(const Duration(milliseconds: 100));
+    // Advance past the splash screen's minimum display duration (900ms)
+    // so its pending Future.delayed timer resolves before the test
+    // disposes the widget tree — otherwise flutter_test flags it as a
+    // leaked timer.
+    await tester.pump(const Duration(milliseconds: 1000));
 
     // Whichever screen the router lands on, booting must not throw.
     expect(tester.takeException(), isNull);
