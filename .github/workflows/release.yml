@@ -1,0 +1,60 @@
+name: Release
+
+# Triggered by pushing a version tag, e.g.:
+#   git tag v1.0.0 && git push origin v1.0.0
+# Produces a permanent, downloadable APK attached to a GitHub Release —
+# more durable than a CI build artifact, which expires after 90 days.
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+env:
+  FLUTTER_VERSION: '3.24.5'
+
+jobs:
+  release:
+    name: Build & publish release APK
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Create Android platform folder
+        run: flutter create --platforms=android .
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Generate localizations
+        run: flutter gen-l10n
+
+      - name: Build release APK
+        run: flutter build apk --release
+
+      - name: Rename APK
+        run: |
+          mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk \
+             dist/techmarket_pro1-${{ github.ref_name }}.apk
+
+      - name: Create GitHub Release with APK attached
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/techmarket_pro1-${{ github.ref_name }}.apk
+          generate_release_notes: true

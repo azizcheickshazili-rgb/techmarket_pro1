@@ -15,8 +15,9 @@ complet.
   <img src="docs/screenshots/detail.png" width="220" alt="Détail produit" />
 </p>
 
-> Les captures d'écran ci-dessus sont des emplacements à remplacer — voir
-> [Captures d'écran](#captures-décran).
+> Aperçus fidèles au thème réel de l'app (navy/cyan, mêmes écrans et
+> composants). À remplacer par de vraies captures une fois l'APK
+> installé sur un appareil — voir [Captures d'écran](#captures-décran).
 
 ## Sommaire
 
@@ -31,6 +32,8 @@ complet.
 - [Accessibilité](#accessibilité)
 - [Internationalisation](#internationalisation)
 - [Captures d'écran](#captures-décran)
+- [Téléchargement de l'APK](#téléchargement-de-lapk)
+- [Licence](#licence)
 
 ## Fonctionnalités
 
@@ -171,5 +174,22 @@ local.
 
 ## Captures d'écran
 
-Remplace les fichiers dans `docs/screenshots/` par tes propres captures
-avant la soumission finale (`login.png`, `products.png`, `detail.png`).
+Les images dans `docs/screenshots/` sont des aperçus fidèles au thème
+réel de l'application (mêmes couleurs, mêmes écrans). Remplace-les par
+de vraies captures prises sur l'APK installé avant la soumission
+finale si tu veux des captures 100% authentiques.
+
+## Téléchargement de l'APK
+
+Deux façons d'obtenir l'APK de démonstration :
+
+1. **Release GitHub** (recommandé, lien permanent) : onglet
+   [Releases](../../releases) du dépôt — publiée automatiquement à
+   chaque tag `v*.*.*` (voir `.github/workflows/release.yml`).
+2. **Artefact de build CI** : onglet *Actions* → dernier run du
+   workflow *CI/CD* → *Build demo APK* → artefact
+   `techmarket_pro1-release-apk` (disponible 90 jours).
+
+## Licence
+
+Ce projet est sous licence MIT — voir [LICENSE](LICENSE).
