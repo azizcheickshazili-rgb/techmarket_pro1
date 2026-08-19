@@ -38,6 +38,14 @@ jobs:
       - name: Create Android platform folder
         run: flutter create --platforms=android .
 
+      # See ci.yml for why this is required: `flutter create` only adds
+      # the INTERNET permission to the debug manifest, so a release APK
+      # built without this patch can't reach the network at all.
+      - name: Grant INTERNET permission for release builds
+        run: |
+          sed -i 's#<manifest xmlns:android="http://schemas.android.com/apk/res/android">#<manifest xmlns:android="http://schemas.android.com/apk/res/android">\n    <uses-permission android:name="android.permission.INTERNET" />#' \
+            android/app/src/main/AndroidManifest.xml
+
       - name: Install dependencies
         run: flutter pub get
 
